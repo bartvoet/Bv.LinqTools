@@ -11,15 +11,15 @@ namespace Ucll.Tools.Tables
 
      public interface ITableFactory
      {
-         public ITable NewTable();
+         ITable NewTable();
      }
 
      public interface ITable
      {
-         public ITable Field(int size = 50);
-         public ITable Fields(params int[] size);
-         public ITable WriteHeader(params object[] list);
-         public ITable WriteRow(params object[] list);
-         public ITable WriteEnd();
+         ITable Field(int size = 50);
+         ITable Fields(params int[] size);
+         ITable WriteHeader(params object[] list);
+         ITable WriteRow(params object[] list);
+         ITable WriteEnd();
      }
 }

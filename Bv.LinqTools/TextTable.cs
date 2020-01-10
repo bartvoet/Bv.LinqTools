@@ -5,7 +5,7 @@ using Ucll.Tools.Tables;
 
 namespace Ucll.Tools.Cons.Tables
 {
-     class TextTableSource : ITableFactory
+     public class TextTableSource : ITableFactory
      {
          private TextWriter Writer;
          public TextTableSource(TextWriter writer)
