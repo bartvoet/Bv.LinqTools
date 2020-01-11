@@ -24,8 +24,7 @@ namespace Bv.Tools.Tables
              Type t = at[0];
              foreach (var p in t.GetProperties())
              {
-                 this.TableWriter.Field(p.Name, (a) => p.GetValue(a).ToString()
-                 );
+                 this.TableWriter.Field(p.Name, (a) => p.GetValue(a).ToString());
              }
          }
 
