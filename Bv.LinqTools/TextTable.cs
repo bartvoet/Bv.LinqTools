@@ -76,15 +76,17 @@ namespace Bv.Tools.Cons.Tables
                  return Size;
              }
 
-             internal string FormatField(Object actualValue)
+             internal string FormatField(object actualValue)
              {
+                 String printValue = actualValue?.ToString()??"";
+
                  switch(this.Alignment) {
                      case TableAlignment.Left: 
-					 	return actualValue.ToString().PadRight(Size);
+					 	return printValue.PadRight(Size);
                      case TableAlignment.Right: 
-					 	return actualValue.ToString().PadLeft(Size);
+					 	return printValue.PadLeft(Size);
 //case TableAlignment.Centered: return actualValue.ToString().PadLeft(Size);
-                     default: return actualValue.ToString().PadRight(Size);
+                     default: return printValue.PadRight(Size);
                  }
              }
          }
