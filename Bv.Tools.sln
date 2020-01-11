@@ -1,11 +1,11 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio 15
-VisualStudioVersion = 15.0.26124.0
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29509.3
 MinimumVisualStudioVersion = 15.0.26124.0
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LinqTools", "Bv.LinqTools\LinqTools.csproj", "{BAD90C04-A52F-456B-B62C-58508E8B54B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bv.Tools", "Bv.Tools\Bv.Tools.csproj", "{BAD90C04-A52F-456B-B62C-58508E8B54B2}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Bv.LinqTools.Tests", "Bv.LinqTools.Tests\Bv.LinqTools.Tests.csproj", "{B8A9EB26-4783-43D9-9A14-61E0872CD92B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Bv.Tools.Tests", "Bv.Tools.Tests\Bv.Tools.Tests.csproj", "{B8A9EB26-4783-43D9-9A14-61E0872CD92B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,9 +15,6 @@ Global
 		Release|Any CPU = Release|Any CPU
 		Release|x64 = Release|x64
 		Release|x86 = Release|x86
-	EndGlobalSection
-	GlobalSection(SolutionProperties) = preSolution
-		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
 		{BAD90C04-A52F-456B-B62C-58508E8B54B2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
@@ -44,5 +41,11 @@ Global
 		{B8A9EB26-4783-43D9-9A14-61E0872CD92B}.Release|x64.Build.0 = Release|Any CPU
 		{B8A9EB26-4783-43D9-9A14-61E0872CD92B}.Release|x86.ActiveCfg = Release|Any CPU
 		{B8A9EB26-4783-43D9-9A14-61E0872CD92B}.Release|x86.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {DA841CEE-6A15-4DCF-BEE4-34E17DD5F067}
 	EndGlobalSection
 EndGlobal
