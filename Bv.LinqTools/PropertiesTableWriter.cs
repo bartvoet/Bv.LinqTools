@@ -1,7 +1,7 @@
 using System;
 using System.Collections.Generic;
 
-namespace Ucll.Tools.Tables
+namespace Bv.Tools.Tables
 {
      public class PropertiesTableWriter
      {

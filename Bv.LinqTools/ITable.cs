@@ -1,4 +1,4 @@
-namespace Ucll.Tools.Tables
+namespace Bv.Tools.Tables
 {
     public enum TableAlignment {
          Centered, Left, Right

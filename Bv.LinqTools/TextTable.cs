@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using Ucll.Tools.Tables;
+using Bv.Tools.Tables;
 
-namespace Ucll.Tools.Cons.Tables
+namespace Bv.Tools.Cons.Tables
 {
      public class TextTableSource : ITableFactory
      {

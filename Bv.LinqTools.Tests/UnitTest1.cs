@@ -1,7 +1,7 @@
 using System;
 using Xunit;
-using Ucll.Tools.Tables;
-using Ucll.Tools.Cons.Tables;
+using Bv.Tools.Tables;
+using Bv.Tools.Cons.Tables;
 using System.Collections.Generic;
 
 namespace Bv.LinqTools.Tests

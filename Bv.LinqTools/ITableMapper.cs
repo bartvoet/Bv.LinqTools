@@ -1,6 +1,6 @@
 using System;
 
-namespace Ucll.Tools.Tables
+namespace Bv.Tools.Tables
 {
      public interface ITableMapper<T> : ITableWriter
      {
