@@ -44,7 +44,7 @@ namespace Bv.Tools.Cons.Demo
              };
 
              //new SimpleTableWriter<T>(b)
-             SimpleTableWriter.CreateWriter(b)
+             SimpleTableMapper.CreateTableMapper(b)
                  .Field("a", (a) => a.hello)  // ITableMapper extends TableWriter
                  .Field("b", (a) => a.world)
                  .WriteTo(tableSource); //TableWriter

@@ -12,7 +12,7 @@ namespace Bv.LinqTools.Tests
         public string world { get; set; }
     }
 
-    public class UnitTest1
+    public class SimpleTableMapperTest
     {
         public static List<T> CreateList<T>(params T[] items)
         {
@@ -26,9 +26,11 @@ namespace Bv.LinqTools.Tests
 
 
         [Fact]
-        public void Test1()
+        public void ConstructorDoesntAcceptANullArgument()
         {
-            ITableFactory tableSource = new TextTableSource(Console.Out);
+            Assert.Throws<ArgumentNullException>(() => new SimpleTableMapper<String>(null));
+        }
+ /*           ITableFactory tableSource = new TextTableSource(Console.Out);
 
             new TextTableSource(Console.Out)
                 .NewTable()
@@ -59,7 +61,7 @@ namespace Bv.LinqTools.Tests
 
             PropertiesTableWriter.CreateWriter(anomymous)
                  .WriteTo(tableSource);
-
-        }
+*/
+        
     }
 }

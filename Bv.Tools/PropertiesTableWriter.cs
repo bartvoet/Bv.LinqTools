@@ -14,12 +14,12 @@ namespace Bv.Tools.Tables
      public class PropertiesTableWriter<T> : ITableWriter
      {
          private IEnumerable<T> Source;
-         private SimpleTableWriter<T> TableWriter;
+         private SimpleTableMapper<T> TableWriter;
 
          public PropertiesTableWriter(IEnumerable<T> e)
          {
              this.Source = e;
-             this.TableWriter = new SimpleTableWriter<T>(Source);
+             this.TableWriter = new SimpleTableMapper<T>(Source);
              Type[] at = e.GetType().GetGenericArguments();
              Type t = at[0];
              foreach (var p in t.GetProperties())

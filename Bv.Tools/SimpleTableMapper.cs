@@ -4,22 +4,26 @@ using System.Collections.Generic;
 
 namespace Bv.Tools.Tables
 {
-    public class SimpleTableWriter
+    public class SimpleTableMapper
     {
-        public static SimpleTableWriter<B> CreateWriter<B>(IEnumerable<B> instance)
+        public static SimpleTableMapper<B> CreateTableMapper<B>(IEnumerable<B> instance)
         {
-            return new SimpleTableWriter<B>(instance);
+            return new SimpleTableMapper<B>(instance);
         }
     }
 
-     public class SimpleTableWriter<T> : ITableMapper<T>
+     public class SimpleTableMapper<T> : ITableMapper<T>
      {
         private IEnumerable<T> Source;
 
         private List<WriterMapper<T>> mappers = new List<WriterMapper<T>>();
 
-        public SimpleTableWriter(IEnumerable<T> e)
+        public SimpleTableMapper(IEnumerable<T> e)
         {
+            if(e == null)
+            {
+                throw new ArgumentNullException("IEnumerable should not be null");
+            }
             this.Source = e;
         }
 
