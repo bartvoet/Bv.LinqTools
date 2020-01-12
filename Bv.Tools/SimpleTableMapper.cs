@@ -1,6 +1,7 @@
 using System;
 using System.Linq;
 using System.Collections.Generic;
+using static Bv.Tools.Utils.GuardClauses;
 
 namespace Bv.Tools.Tables
 {
@@ -20,11 +21,7 @@ namespace Bv.Tools.Tables
 
         public SimpleTableMapper(IEnumerable<T> e)
         {
-            if(e == null)
-            {
-                throw new ArgumentNullException("IEnumerable should not be null");
-            }
-            this.Source = e;
+            this.Source = IsNotNull(e, "IEnumerable should not be null");
         }
 
         public ITableMapper<T> Field(string name, Func<T, string> f)
@@ -35,6 +32,8 @@ namespace Bv.Tools.Tables
 
         public void WriteTo(ITableFactory source)
         {
+            IsNotNull(source,"Source should be provided");
+
             List<List<string>> content = PreLoadContent();
             ITable table = CreateTableBasedOnColumnWidths(source,content);
            
@@ -105,8 +104,8 @@ namespace Bv.Tools.Tables
 
         internal WriterMapper(string column, Func<T, string> map)
         {
-            this.ColumnName = column;
-            this.Map = map;
+            this.ColumnName = (column == null ? "": column);
+            this.Map = IsNotNull(map,"Mapper cannot be null");
         }
     }
 }
