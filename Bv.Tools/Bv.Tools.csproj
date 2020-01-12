@@ -1,8 +1,12 @@
-<Project Sdk="Microsoft.NET.Sdk">
+﻿<Project Sdk="Microsoft.NET.Sdk">
 
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>netcoreapp3.1</TargetFramework>
+    <PackageId>Bv.Tools</PackageId>
+    <Version>0.0.1</Version>
+    <Authors>BV</Authors>
+    <Company>NA</Company>
   </PropertyGroup>
 
 </Project>
