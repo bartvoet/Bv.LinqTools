@@ -7,16 +7,6 @@ namespace Bv.Tools.Tests
 {
     public class SimpleTableMapperTest
     {
-        public static List<T> CreateList<T>(params T[] items)
-        {
-            List<T> result = new List<T>();
-            foreach (T item in items)
-            {
-                result.Add(item);
-            }
-            return result;
-        }
-
 
         [Fact]
         public void Constructor_ThrowsException_WhenSourceIsNull()
