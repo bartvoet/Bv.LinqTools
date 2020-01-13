@@ -3,7 +3,7 @@ using Xunit;
 using Bv.Tools.Tables;
 using System.Collections.Generic;
 
-namespace Bv.LinqTools.Tests
+namespace Bv.Tools.Tests
 {
     public class SimpleTableMapperTest
     {
